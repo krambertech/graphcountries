@@ -28,7 +28,7 @@
     "cheerio": "^1.0.0-rc.3",
     "cheerio-tableparser": "^1.0.1",
     "dotenv": "^8.2.0",
-    "graphql": "^15.0.0",
+    "graphql": "14.6.0",
     "graphql-import": "^1.0.2",
     "graphql-tag": "^2.10.3",
     "html2json": "^1.0.2",
@@ -39,6 +39,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
+  },
+  "resolutions": {
+    "graphql": "14.6.0"
   },
   "nodemonConfig": {
     "watch": [

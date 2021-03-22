@@ -219,9 +219,13 @@ const createTranslatedCountryNames = async ({ translations, name }) => {
 }
 
 (async () => {
-  // await resetDatabase();
-  // await makeUnits();
-  // await getData(setCountry);
-  // await inferNeo4jSchema();
-  // driver.close()
+  console.log('start');
+  await resetDatabase();
+  console.log('reset');
+  await makeUnits();
+  await getData(setCountry);
+  await inferNeo4jSchema();
+  console.log('done');
+  driver.close()
+  console.log('closed');
 })();

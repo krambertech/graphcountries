@@ -29,7 +29,7 @@ fs.readFile('./src/graphql/schema.graphql', (error, result) => {
         };
       },
       engine: {
-        apiKey: "service:graphql-countries:MHaMUmJGfYSddSP_IU5Iqg",
+        apiKey: process.env.ENGINE_API_KEY,
       },
       introspection: true,
       playground: true,
